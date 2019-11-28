@@ -22,14 +22,14 @@
 		android:minHeight="25px"
 		android:layout_weight="25"
 		android:gravity="center_horizontal"
-		android:weightSum="100"
+		android:weightSum="100.5"
 		android:layout_width="match_parent"
 		android:layout_height="0dp">
 		<LinearLayout
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -52,7 +52,7 @@
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -75,7 +75,7 @@
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -101,14 +101,14 @@
 		android:minHeight="25px"
 		android:layout_weight="25"
 		android:gravity="center_horizontal"
-		android:weightSum="100"
+		android:weightSum="100.5"
 		android:layout_width="match_parent"
 		android:layout_height="0dp">
 		<LinearLayout
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -131,7 +131,7 @@
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -154,7 +154,7 @@
 			android:orientation="vertical"
 			android:padding="5dp"
 			android:gravity="center_horizontal"
-			android:layout_weight="33"
+			android:layout_weight="33.5"
 			android:layout_width="0dp"
 			android:layout_height="wrap_content">
 			<ImageButton
@@ -164,11 +164,13 @@
 				android:layout_height="wrap_content"
 				android:id="@+id/imageButton2" />
 			<TextView
-				android:text="PLANOCONGRES"
+				android:text="PLANO CONGRESO"
+				android:textSize="12dp"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content" />
 			<View
+				android:layout_marginTop="3dp"
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
 				android:background="@android:color/black" />
