@@ -32,7 +32,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="0dp">
 		<TextView
-			android:text="EXPOSICIÓN \nCOMERCIAL"
+			android:text="EXPOSICIÓN   \nCOMERCIAL"
 			android:layout_gravity="center"
 			android:textAppearance="?android:attr/textAppearanceLarge"
 			android:layout_width="wrap_content"

@@ -20,6 +20,13 @@ namespace Cpodo.Activities
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.ContactInformationActivity);
+
+			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+			toolbar.NavigationOnClick += delegate
+			{
+				StartActivity(typeof(MainActivity));
+				Finish();
+			};
 		}
 	}
 }

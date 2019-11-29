@@ -24,18 +24,21 @@ namespace Cpodo
 			informationBtn.Click += delegate
 			{
 				StartActivity(typeof(ContactInformationActivity));
+				Finish();
 			};
 
 			congressImageBtn = FindViewById<ImageButton>(Resource.Id.congressImageBtn);
 			congressImageBtn.Click += delegate
 			{
 				StartActivity(typeof(CongressActivity));
+				Finish();
 			};
 
 			exhibitionAreaImageBtn = FindViewById<ImageButton>(Resource.Id.exhibitionAreaImageBtn);
 			exhibitionAreaImageBtn.Click += delegate
 			{
 				StartActivity(typeof(ExhibitionAreaActivity));
+				Finish();
 			};
 
 		}

@@ -5,6 +5,15 @@
     android:layout_height="match_parent">
 	<!-- TODO: Add border with shadow at the bottom -->
 	<!-- android:background="@drawable/border_with_bottom_shadow" -->
+	<Toolbar 
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?attr/actionBarSize"
+		android:background="#0000ff" 
+		android:title = "Informacíon de contacto"
+		android:titleTextColor = "#FFFFFF"
+	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
 	<LinearLayout
 		android:orientation="vertical"
 		android:padding="10dp"
