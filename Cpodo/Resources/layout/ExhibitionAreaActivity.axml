@@ -4,6 +4,15 @@
 	android:weightSum="100"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	<Toolbar 
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?attr/actionBarSize"
+		android:background="#0000ff" 
+		android:title = "Zona expositiva"
+		android:titleTextColor = "#FFFFFF"
+	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
 	<LinearLayout
 		android:orientation="horizontal"
 		android:gravity="center"
@@ -53,7 +62,7 @@
 				android:layout_height="wrap_content"
 				android:id="@+id/congressBtn" />
 			<TextView
-				android:text="CONGRESO"
+				android:text="PLANO EXPOSITIVO"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"/>
@@ -76,7 +85,7 @@
 				android:layout_height="wrap_content"
 				android:id="@+id/imageButton2" />
 			<TextView
-				android:text="ZONA EXPOSITIVA"
+				android:text="EXPOSITORES"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content" />

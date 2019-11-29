@@ -20,6 +20,14 @@ namespace Cpodo.Activities
 			base.OnCreate(savedInstanceState);
 
 			SetContentView(Resource.Layout.CongressActivity);
+
+			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+			toolbar.NavigationOnClick += delegate
+			{
+				StartActivity(typeof(MainActivity));
+				Finish();
+			};
 		}
+	
 	}
 }
