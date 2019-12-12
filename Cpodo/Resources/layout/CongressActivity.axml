@@ -9,7 +9,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:minHeight="?attr/actionBarSize"
-		android:background="#0000ff" 
+		android:background="@color/appColor" 
 		android:title = "Congreso"
 		android:titleTextColor = "#FFFFFF"
 	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
@@ -51,11 +51,12 @@
 				android:text="LOCALIZACIÓN"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+				android:textColor="@color/appColor" />
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 		<LinearLayout
 			android:orientation="vertical"
@@ -74,11 +75,12 @@
 				android:text="PROGRAMA"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 		<LinearLayout
 			android:orientation="vertical"
@@ -97,11 +99,12 @@
 				android:text="PONENTES"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout
@@ -130,11 +133,12 @@
 				android:text="MI AGENDA"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 		<LinearLayout
 			android:orientation="vertical"
@@ -153,11 +157,12 @@
 				android:text="VOTACIÓN"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 		<LinearLayout
 			android:orientation="vertical"
@@ -177,12 +182,13 @@
 				android:textSize="12dp"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_marginTop="3dp"
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"/>
 		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout

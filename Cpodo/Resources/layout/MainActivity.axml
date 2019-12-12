@@ -59,11 +59,12 @@
 				android:text="CONGRESO"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"/>
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"  />
 		</LinearLayout>
 		<LinearLayout
 			android:orientation="vertical"
@@ -82,11 +83,12 @@
 				android:text="ZONA EXPOSITIVA"
 				android:textAppearance="?android:attr/textAppearanceSmall"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
+				android:layout_height="wrap_content"
+			    android:textColor="@color/appColor"/>
 			<View
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:background="@android:color/black" />
+				android:background="@color/appColor"  />
 		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout
