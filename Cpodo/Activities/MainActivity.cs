@@ -4,10 +4,11 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using Cpodo.Activities;
+using Android.Content.PM;
 
 namespace Cpodo
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity
     {
 		Button informationBtn;
