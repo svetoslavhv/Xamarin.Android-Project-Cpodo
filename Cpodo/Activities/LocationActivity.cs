@@ -13,32 +13,22 @@ using Android.Widget;
 
 namespace Cpodo.Activities
 {
-	[Activity(Label = "CongressActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class CongressActivity : Activity
+	[Activity(Label = "LocationActivity", ScreenOrientation = ScreenOrientation.Portrait)]
+	public class LocationActivity : Activity
 	{
-		ImageButton locationImageBtn;
-
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
+			
+			SetContentView(Resource.Layout.LocationActivity);
 
-			SetContentView(Resource.Layout.CongressActivity);
-
+			//TODO: try placing that in BaseActivity
 			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
 				StartActivity(typeof(MainActivity));
 				Finish();
 			};
-
-
-			locationImageBtn = FindViewById<ImageButton>(Resource.Id.locationImageBtn);
-			locationImageBtn.Click += delegate
-			{
-				StartActivity(typeof(LocationActivity));
-				Finish();
-			};
 		}
-	
 	}
 }
