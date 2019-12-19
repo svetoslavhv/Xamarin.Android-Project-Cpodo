@@ -16,6 +16,9 @@ namespace Cpodo.Activities
 	[Activity(Label = "LocationActivity", ScreenOrientation = ScreenOrientation.Portrait)]
 	public class LocationActivity : Activity
 	{
+		ImageButton informationImageBtn;
+		ImageButton locationImageBtn;
+
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -26,8 +29,24 @@ namespace Cpodo.Activities
 			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
-				StartActivity(typeof(MainActivity));
+				StartActivity(typeof(CongressActivity));
 				Finish();
+			};
+
+			informationImageBtn = FindViewById<ImageButton>(Resource.Id.informationImageBtn);
+			informationImageBtn.Click += delegate
+			{
+				var uri = Android.Net.Uri.Parse("https://www.palcongres-vlc.com/");
+				var intent = new Intent(Intent.ActionView, uri);
+				StartActivity(intent);
+			};
+
+			locationImageBtn = FindViewById<ImageButton>(Resource.Id.locationImageBtn);
+			locationImageBtn.Click += delegate
+			{
+				var geoUri = Android.Net.Uri.Parse("geo:0,0?q=Avinguda+de+les+Corts+Valencianes,+60,+46015+València");
+				var mapIntent = new Intent(Intent.ActionView, geoUri);
+				StartActivity(mapIntent);
 			};
 		}
 	}
