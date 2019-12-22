@@ -3,8 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<!-- TODO: Add border with shadow at the bottom -->
-	<!-- android:background="@drawable/border_with_bottom_shadow" -->
 	<Toolbar 
 		android:id="@+id/toolbar"
 		android:layout_width="match_parent"
@@ -16,11 +14,13 @@
 	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
 	<LinearLayout
 		android:orientation="vertical"
-		android:padding="10dp"
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+		android:layout_height="wrap_content"
+		android:background="@drawable/border_with_bottom_shadow"
+		android:layout_margin="10dp"
+		android:padding="10dp">
 		<ImageView
 			android:src="@android:drawable/ic_menu_gallery"
 			android:layout_width="match_parent"
@@ -104,5 +104,73 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:id="@+id/textView3" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2"
+		android:weightSum="100"
+		android:layout_marginTop="20dp">
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout3"
+			android:layout_weight="50"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:padding="5dp">
+			<ImageButton
+				android:src="@drawable/ic_congress"
+				android:background="@android:color/transparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/locationImageBtn" />
+			<TextView
+				android:text="LA CIUDAD"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+			    android:textColor="@color/appColor"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/appColor" />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout3"
+			android:layout_weight="50"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:padding="5dp">
+			<ImageButton
+				android:src="@drawable/ic_congress"
+				android:background="@android:color/transparent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/imageButton1" />
+			<TextView
+				android:text="EL PALACIO"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView2"
+			    android:textColor="@color/appColor"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/appColor" />
+		</LinearLayout>
 	</LinearLayout>
 </LinearLayout>

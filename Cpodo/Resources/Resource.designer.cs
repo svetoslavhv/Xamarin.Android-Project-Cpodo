@@ -2477,20 +2477,20 @@ namespace Cpodo
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int congressBtn = 2131230883;
+			// aapt resource value: 0x7f0800a5
+			public const int congressBtn = 2131230885;
 			
 			// aapt resource value: 0x7f0800a9
 			public const int congressImageBtn = 2131230889;
 			
-			// aapt resource value: 0x7f080097
-			public const int container = 2131230871;
+			// aapt resource value: 0x7f080099
+			public const int container = 2131230873;
 			
 			// aapt resource value: 0x7f080066
 			public const int contentPanel = 2131230822;
 			
-			// aapt resource value: 0x7f080098
-			public const int coordinator = 2131230872;
+			// aapt resource value: 0x7f08009a
+			public const int coordinator = 2131230874;
 			
 			// aapt resource value: 0x7f08006d
 			public const int custom = 2131230829;
@@ -2504,20 +2504,20 @@ namespace Cpodo
 			// aapt resource value: 0x7f080060
 			public const int default_activity_button = 2131230816;
 			
-			// aapt resource value: 0x7f08009a
-			public const int design_bottom_sheet = 2131230874;
+			// aapt resource value: 0x7f08009c
+			public const int design_bottom_sheet = 2131230876;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int design_menu_item_action_area = 2131230883;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int design_menu_item_action_area_stub = 2131230882;
 			
 			// aapt resource value: 0x7f0800a1
-			public const int design_menu_item_action_area = 2131230881;
+			public const int design_menu_item_text = 2131230881;
 			
 			// aapt resource value: 0x7f0800a0
-			public const int design_menu_item_action_area_stub = 2131230880;
-			
-			// aapt resource value: 0x7f08009f
-			public const int design_menu_item_text = 2131230879;
-			
-			// aapt resource value: 0x7f08009e
-			public const int design_navigation_view = 2131230878;
+			public const int design_navigation_view = 2131230880;
 			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
@@ -2615,8 +2615,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f080096
-			public const int largeLabel = 2131230870;
+			// aapt resource value: 0x7f080098
+			public const int largeLabel = 2131230872;
 			
 			// aapt resource value: 0x7f080049
 			public const int left = 2131230793;
@@ -2627,14 +2627,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f080018
 			public const int line3 = 2131230744;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int linearLayout1 = 2131230884;
-			
-			// aapt resource value: 0x7f0800a5
-			public const int linearLayout2 = 2131230885;
-			
 			// aapt resource value: 0x7f0800a6
-			public const int linearLayout3 = 2131230886;
+			public const int linearLayout1 = 2131230886;
+			
+			// aapt resource value: 0x7f080095
+			public const int linearLayout2 = 2131230869;
+			
+			// aapt resource value: 0x7f080096
+			public const int linearLayout3 = 2131230870;
 			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
@@ -2663,8 +2663,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f08009d
-			public const int navigation_header_container = 2131230877;
+			// aapt resource value: 0x7f08009f
+			public const int navigation_header_container = 2131230879;
 			
 			// aapt resource value: 0x7f08003b
 			public const int never = 2131230779;
@@ -2786,14 +2786,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f080025
 			public const int showTitle = 2131230757;
 			
-			// aapt resource value: 0x7f080095
-			public const int smallLabel = 2131230869;
+			// aapt resource value: 0x7f080097
+			public const int smallLabel = 2131230871;
 			
-			// aapt resource value: 0x7f08009c
-			public const int snackbar_action = 2131230876;
+			// aapt resource value: 0x7f08009e
+			public const int snackbar_action = 2131230878;
 			
-			// aapt resource value: 0x7f08009b
-			public const int snackbar_text = 2131230875;
+			// aapt resource value: 0x7f08009d
+			public const int snackbar_text = 2131230877;
 			
 			// aapt resource value: 0x7f080043
 			public const int snap = 2131230787;
@@ -2852,8 +2852,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080094
 			public const int textView3 = 2131230868;
 			
-			// aapt resource value: 0x7f0800a2
-			public const int text_input_password_toggle = 2131230882;
+			// aapt resource value: 0x7f0800a4
+			public const int text_input_password_toggle = 2131230884;
 			
 			// aapt resource value: 0x7f080014
 			public const int textinput_counter = 2131230740;
@@ -2882,8 +2882,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f08006e
 			public const int topPanel = 2131230830;
 			
-			// aapt resource value: 0x7f080099
-			public const int touch_outside = 2131230873;
+			// aapt resource value: 0x7f08009b
+			public const int touch_outside = 2131230875;
 			
 			// aapt resource value: 0x7f08000f
 			public const int transition_current_scene = 2131230735;
