@@ -130,7 +130,7 @@
 				android:background="@android:color/transparent"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:id="@+id/locationImageBtn" />
+				android:id="@+id/cityImageBtn" />
 			<TextView
 				android:text="LA CIUDAD"
 				android:textAppearance="?android:attr/textAppearanceSmall"
@@ -159,7 +159,7 @@
 				android:background="@android:color/transparent"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:id="@+id/imageButton1" />
+				android:id="@+id/palaceImageBtn" />
 			<TextView
 				android:text="EL PALACIO"
 				android:textAppearance="?android:attr/textAppearanceSmall"
