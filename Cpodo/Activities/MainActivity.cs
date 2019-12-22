@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Widget;
 using Cpodo.Activities;
 using Android.Content.PM;
+using Android.Content;
 
 namespace Cpodo
 {
@@ -14,6 +15,9 @@ namespace Cpodo
 		Button informationBtn;
 		ImageButton congressImageBtn;
 		ImageButton exhibitionAreaImageBtn;
+		ImageButton facebookImageBtn;
+		ImageButton twitterImageBtn;
+		ImageButton linkedinImageBtn;
 
 		protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -21,27 +25,68 @@ namespace Cpodo
 			
             SetContentView(Resource.Layout.MainActivity);
 
+			FindViews();
+
+			BindClickEvents();
+
+		}
+
+		/// <summary>
+		/// Method to find the views
+		/// </summary>
+		private void FindViews()
+		{
 			informationBtn = FindViewById<Button>(Resource.Id.informationBtn);
+			congressImageBtn = FindViewById<ImageButton>(Resource.Id.congressImageBtn);
+			exhibitionAreaImageBtn = FindViewById<ImageButton>(Resource.Id.exhibitionAreaImageBtn);
+			facebookImageBtn = FindViewById<ImageButton>(Resource.Id.facebookImageBtn);
+			twitterImageBtn = FindViewById<ImageButton>(Resource.Id.twitterImageBtn);
+			linkedinImageBtn = FindViewById<ImageButton>(Resource.Id.linkedinImageBtn);
+		}
+
+		/// <summary>
+		/// Method to bind the click events
+		/// </summary>
+		private void BindClickEvents()
+		{
 			informationBtn.Click += delegate
 			{
 				StartActivity(typeof(ContactInformationActivity));
 				Finish();
 			};
-
-			congressImageBtn = FindViewById<ImageButton>(Resource.Id.congressImageBtn);
+			
 			congressImageBtn.Click += delegate
 			{
 				StartActivity(typeof(CongressActivity));
 				Finish();
 			};
-
-			exhibitionAreaImageBtn = FindViewById<ImageButton>(Resource.Id.exhibitionAreaImageBtn);
+			
 			exhibitionAreaImageBtn.Click += delegate
 			{
 				StartActivity(typeof(ExhibitionAreaActivity));
 				Finish();
 			};
-
+			
+			facebookImageBtn.Click += delegate
+			{
+				var uri = Android.Net.Uri.Parse("https://www.facebook.com/");
+				var intent = new Intent(Intent.ActionView, uri);
+				StartActivity(intent);
+			};
+			
+			twitterImageBtn.Click += delegate
+			{
+				var uri = Android.Net.Uri.Parse("https://twitter.com/");
+				var intent = new Intent(Intent.ActionView, uri);
+				StartActivity(intent);
+			};
+			
+			linkedinImageBtn.Click += delegate
+			{
+				var uri = Android.Net.Uri.Parse("https://www.linkedin.com/");
+				var intent = new Intent(Intent.ActionView, uri);
+				StartActivity(intent);
+			};
 		}
 		
 	}
