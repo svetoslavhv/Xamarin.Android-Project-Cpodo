@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\CongressActivity.cs" />
+    <Compile Include="Activities\CongressMapActivity.cs" />
     <Compile Include="Activities\ContactInformationActivity.cs" />
     <Compile Include="Activities\ExhibitionAreaActivity.cs" />
     <Compile Include="Activities\LocationActivity.cs" />
@@ -187,6 +188,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CongressMapActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

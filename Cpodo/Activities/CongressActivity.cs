@@ -17,6 +17,7 @@ namespace Cpodo.Activities
 	public class CongressActivity : Activity
 	{
 		ImageButton locationImageBtn;
+		ImageButton congressMapImageBtn;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -36,6 +37,13 @@ namespace Cpodo.Activities
 			locationImageBtn.Click += delegate
 			{
 				StartActivity(typeof(LocationActivity));
+				Finish();
+			};
+
+			congressMapImageBtn = FindViewById<ImageButton>(Resource.Id.congressMapImageBtn);
+			congressMapImageBtn.Click += delegate
+			{
+				StartActivity(typeof(CongressMapActivity));
 				Finish();
 			};
 		}

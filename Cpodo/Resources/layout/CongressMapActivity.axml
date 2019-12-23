@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:weightSum="100">
+	<Toolbar 
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?attr/actionBarSize"
+		android:background="@color/appColor" 
+		android:title = "Plano congreso"
+		android:titleTextColor = "#FFFFFF"
+	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
+	<TextView
+		android:text="TODO: Add zoomable image here"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/textView1"
+		android:layout_weight="50"
+		android:gravity="center"/>
+	<TextView
+		android:text="TODO: Add zoomable image here"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2"
+		android:layout_weight="50"
+		android:gravity="center"/>
+
+</LinearLayout>
