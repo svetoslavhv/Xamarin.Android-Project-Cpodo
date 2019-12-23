@@ -55,7 +55,8 @@
 			android:id="@+id/linearLayout3"
 			android:layout_weight="33.5"
 			android:gravity="center"
-			android:layout_gravity="center">
+			android:layout_gravity="center"
+			android:padding="5dp">
 			<ImageButton
 				android:src="@drawable/ic_congress"
 				android:background="@android:color/transparent"
@@ -83,7 +84,8 @@
 			android:id="@+id/linearLayout3"
 			android:layout_weight="33.5"
 			android:gravity="center"
-			android:layout_gravity="center">
+			android:layout_gravity="center"
+			android:padding="5dp">
 			<ImageButton
 				android:src="@drawable/ic_congress"
 				android:background="@android:color/transparent"
@@ -111,7 +113,8 @@
 			android:id="@+id/linearLayout3"
 			android:layout_weight="33.5"
 			android:gravity="center"
-			android:layout_gravity="center">
+			android:layout_gravity="center"
+			android:padding="5dp">
 			<ImageButton
 				android:src="@drawable/ic_congress"
 				android:background="@android:color/transparent"
