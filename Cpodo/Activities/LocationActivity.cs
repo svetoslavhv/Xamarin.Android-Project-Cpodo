@@ -18,6 +18,7 @@ namespace Cpodo.Activities
 	{
 		ImageButton informationImageBtn;
 		ImageButton locationImageBtn;
+		ImageButton mapImageBtn;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -47,6 +48,13 @@ namespace Cpodo.Activities
 				var geoUri = Android.Net.Uri.Parse("geo:0,0?q=Avinguda+de+les+Corts+Valencianes,+60,+46015+València");
 				var mapIntent = new Intent(Intent.ActionView, geoUri);
 				StartActivity(mapIntent);
+			};
+
+			mapImageBtn = FindViewById<ImageButton>(Resource.Id.mapImageBtn);
+			mapImageBtn.Click += delegate
+			{
+				StartActivity(typeof(MapActivity));
+				Finish();
 			};
 		}
 	}
