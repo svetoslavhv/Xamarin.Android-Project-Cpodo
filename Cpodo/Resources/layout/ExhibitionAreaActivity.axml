@@ -11,9 +11,14 @@
 		android:layout_height="wrap_content"
 		android:minHeight="?attr/actionBarSize"
 		android:background="@color/appColor"
-		android:title = "Zona expositiva"
-		android:titleTextColor = "#FFFFFF"
-	    android:navigationIcon="@drawable/ic_toolbar_back_button"/>
+	    android:navigationIcon="@drawable/ic_toolbar_back_button">
+		<TextView
+			android:text="Zona expositiva"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"/>
+	</Toolbar>
 	<LinearLayout
 		android:orientation="horizontal"
 		android:gravity="center"
