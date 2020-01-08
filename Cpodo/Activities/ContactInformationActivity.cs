@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Cpodo.Activities
 {
 	[Activity(Label = "ContactInformationActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class ContactInformationActivity : Activity
+	public class ContactInformationActivity : BaseActivity
 	{
 		ImageButton cityImageBtn;
 		ImageButton palaceImageBtn;

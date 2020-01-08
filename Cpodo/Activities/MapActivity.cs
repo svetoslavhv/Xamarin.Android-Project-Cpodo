@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Cpodo.Activities
 {
 	[Activity(Label = "MapActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class MapActivity : Activity
+	public class MapActivity : BaseActivity
 	{
 		Toolbar toolbar;
 

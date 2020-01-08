@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Cpodo.Activities
 {
 	[Activity(Label = "ExhibitionAreaActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class ExhibitionAreaActivity : Activity
+	public class ExhibitionAreaActivity : BaseActivity
 	{
 		protected override void OnCreate(Bundle savedInstanceState)
 		{

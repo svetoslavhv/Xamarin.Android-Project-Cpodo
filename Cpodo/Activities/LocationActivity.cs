@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Cpodo.Activities
 {
 	[Activity(Label = "LocationActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class LocationActivity : Activity
+	public class LocationActivity : BaseActivity
 	{
 		ImageButton informationImageBtn;
 		ImageButton locationImageBtn;

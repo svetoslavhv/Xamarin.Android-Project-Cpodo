@@ -10,8 +10,8 @@ using Android.Content;
 namespace Cpodo
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class MainActivity : AppCompatActivity
-    {
+    public class MainActivity : BaseActivity
+	{
 		Button informationBtn;
 		ImageButton congressImageBtn;
 		ImageButton exhibitionAreaImageBtn;

@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Cpodo.Activities
 {
 	[Activity(Label = "CongressActivity", ScreenOrientation = ScreenOrientation.Portrait)]
-	public class CongressActivity : Activity
+	public class CongressActivity : BaseActivity
 	{
 		ImageButton locationImageBtn;
 		ImageButton congressMapImageBtn;
@@ -47,6 +47,6 @@ namespace Cpodo.Activities
 				Finish();
 			};
 		}
-	
+		
 	}
 }
