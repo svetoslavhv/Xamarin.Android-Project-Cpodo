@@ -53,6 +53,9 @@ namespace Cpodo.Activities
 			mapImageBtn = FindViewById<ImageButton>(Resource.Id.mapImageBtn);
 			mapImageBtn.Click += delegate
 			{
+				//this prevents user to click button several times while MapActivity is loading
+				mapImageBtn.Enabled = false;
+
 				StartActivity(typeof(MapActivity));
 				Finish();
 			};
