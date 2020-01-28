@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Cpodo.Fragments;
 
 namespace Cpodo.Activities
 {
@@ -17,6 +18,9 @@ namespace Cpodo.Activities
 	public class CongressMapActivity : BaseActivity
 	{
 		Toolbar toolbar;
+
+		TextView exhibitionAreaTextView;
+		TextView multipurposeRoomTextView;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -29,6 +33,24 @@ namespace Cpodo.Activities
 			{
 				StartActivity(typeof(CongressActivity));
 				Finish();
+			};
+
+			exhibitionAreaTextView = FindViewById<TextView>(Resource.Id.exhibitionAreaTextView);
+			multipurposeRoomTextView = FindViewById<TextView>(Resource.Id.multipurposeRoomTextView);
+
+			ExhibitionAreaFragment exhibitionAreaFragment = new ExhibitionAreaFragment();
+			MultipurposeRoomFragment multipurposeRoomFragment = new MultipurposeRoomFragment();
+
+			SupportFragmentManager.BeginTransaction().Add(Resource.Id.imageZoneLinearLayout, exhibitionAreaFragment).Commit();
+
+			exhibitionAreaTextView.Click += delegate
+			{
+				SupportFragmentManager.BeginTransaction().Replace(Resource.Id.imageZoneLinearLayout, exhibitionAreaFragment).Commit();
+			};
+
+			multipurposeRoomTextView.Click += delegate
+			{
+				SupportFragmentManager.BeginTransaction().Replace(Resource.Id.imageZoneLinearLayout, multipurposeRoomFragment).Commit();
 			};
 		}
 	}

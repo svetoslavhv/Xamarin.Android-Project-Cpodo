@@ -66,6 +66,8 @@
     <Compile Include="Activities\MapActivity.cs" />
     <Compile Include="CustomControls\ScaleImageView.cs" />
     <Compile Include="CustomControls\ScaleImageViewGestureDetector.cs" />
+    <Compile Include="Fragments\ExhibitionAreaFragment.cs" />
+    <Compile Include="Fragments\MultipurposeRoomFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -208,7 +210,18 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_51_congress_logo.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_multipurpose_room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_exhibition_area.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MultipurposeRoomFragment.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ExhibitionAreaFragment.axml" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.

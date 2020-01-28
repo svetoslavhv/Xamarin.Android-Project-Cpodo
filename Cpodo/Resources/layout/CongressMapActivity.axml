@@ -18,23 +18,34 @@
 			android:layout_height="wrap_content"
 			android:textColor="#FFFFFF"/>
 	</Toolbar>
-	<TextView
-		android:text="TODO: Add zoomable image here"
-		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+	<LinearLayout
+		android:orientation="horizontal"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView1"
-		android:layout_weight="50"
-		android:gravity="center"/>
-	<TextView
-		android:text="TODO: Add zoomable image here"
-		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/textView2"
-		android:layout_weight="50"
-		android:gravity="center"/>
+		android:weightSum="100"
+		android:layout_margin="10dp">
+		<TextView
+			android:text="ÁREA DE EXPOSICION"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/exhibitionAreaTextView"
+			android:layout_weight="50"
+			android:gravity="center"/>
+		<TextView
+			android:text="SALÓN MULTIUSOS"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/multipurposeRoomTextView"
+			android:layout_weight="50"
+			android:gravity="center"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/imageZoneLinearLayout" />
 
 </LinearLayout>
