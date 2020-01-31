@@ -28,8 +28,7 @@ namespace Cpodo.Activities
 			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
-				StartActivity(typeof(MainActivity));
-				Finish();
+				this.OnBackPressed();
 			};
 
 
@@ -43,10 +42,19 @@ namespace Cpodo.Activities
 			congressMapImageBtn = FindViewById<ImageButton>(Resource.Id.congressMapImageBtn);
 			congressMapImageBtn.Click += delegate
 			{
+				//this prevents user to click the button several times while CongressMapActivity is loading
+				congressMapImageBtn.Enabled = false;
+
 				StartActivity(typeof(CongressMapActivity));
 				Finish();
 			};
 		}
-		
+
+		public override void OnBackPressed()
+		{
+			StartActivity(typeof(MainActivity));
+			Finish();
+		}
+
 	}
 }

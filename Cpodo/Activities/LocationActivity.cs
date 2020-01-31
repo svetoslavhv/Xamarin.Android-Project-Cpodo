@@ -30,8 +30,7 @@ namespace Cpodo.Activities
 			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
-				StartActivity(typeof(CongressActivity));
-				Finish();
+				this.OnBackPressed();
 			};
 
 			informationImageBtn = FindViewById<ImageButton>(Resource.Id.informationImageBtn);
@@ -59,6 +58,12 @@ namespace Cpodo.Activities
 				StartActivity(typeof(MapActivity));
 				Finish();
 			};
+		}
+
+		public override void OnBackPressed()
+		{
+			StartActivity(typeof(CongressActivity));
+			Finish();
 		}
 	}
 }

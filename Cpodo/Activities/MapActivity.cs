@@ -27,9 +27,14 @@ namespace Cpodo.Activities
 			toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
-				StartActivity(typeof(LocationActivity));
-				Finish();
+				this.OnBackPressed();
 			};
+		}
+
+		public override void OnBackPressed()
+		{
+			StartActivity(typeof(LocationActivity));
+			Finish();
 		}
 	}
 }

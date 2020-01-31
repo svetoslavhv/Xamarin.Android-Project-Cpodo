@@ -33,8 +33,7 @@ namespace Cpodo.Activities
 			toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
-				StartActivity(typeof(CongressActivity));
-				Finish();
+				this.OnBackPressed();
 			};
 
 			exhibitionAreaTextView = FindViewById<TextView>(Resource.Id.exhibitionAreaTextView);
@@ -85,6 +84,12 @@ namespace Cpodo.Activities
 				exhibitionAreaTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
 				exhibitionAreaTextView.SetTextColor(ContextCompat.GetColorStateList(Application.Context, Resource.Color.appColor));
 			}
+		}
+
+		public override void OnBackPressed()
+		{
+			StartActivity(typeof(CongressActivity));
+			Finish();
 		}
 	}
 }
