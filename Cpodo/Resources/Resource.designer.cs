@@ -2233,26 +2233,26 @@ namespace Cpodo
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f020078
+			public const int avd_hide_password_1 = 2130837624;
+			
 			// aapt resource value: 0x7f020079
-			public const int avd_hide_password_1 = 2130837625;
+			public const int avd_hide_password_2 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int avd_hide_password_2 = 2130837626;
-			
-			// aapt resource value: 0x7f02007b
-			public const int avd_hide_password_3 = 2130837627;
+			public const int avd_hide_password_3 = 2130837626;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
+			// aapt resource value: 0x7f02007b
+			public const int avd_show_password_1 = 2130837627;
+			
 			// aapt resource value: 0x7f02007c
-			public const int avd_show_password_1 = 2130837628;
+			public const int avd_show_password_2 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int avd_show_password_2 = 2130837629;
-			
-			// aapt resource value: 0x7f02007e
-			public const int avd_show_password_3 = 2130837630;
+			public const int avd_show_password_3 = 2130837629;
 			
 			// aapt resource value: 0x7f020055
 			public const int border_with_bottom_shadow = 2130837589;
@@ -2309,58 +2309,55 @@ namespace Cpodo
 			public const int ic_twitter = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_walmart = 2130837607;
+			public const int navigation_empty_icon = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int navigation_empty_icon = 2130837608;
+			public const int notification_action_background = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int notification_action_background = 2130837609;
+			public const int notification_bg = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int notification_bg = 2130837610;
+			public const int notification_bg_low = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int notification_bg_low = 2130837611;
+			public const int notification_bg_low_normal = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int notification_bg_low_normal = 2130837612;
+			public const int notification_bg_low_pressed = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int notification_bg_low_pressed = 2130837613;
+			public const int notification_bg_normal = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int notification_bg_normal = 2130837614;
+			public const int notification_bg_normal_pressed = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int notification_bg_normal_pressed = 2130837615;
-			
-			// aapt resource value: 0x7f020070
-			public const int notification_icon_background = 2130837616;
-			
-			// aapt resource value: 0x7f020077
-			public const int notification_template_icon_bg = 2130837623;
-			
-			// aapt resource value: 0x7f020078
-			public const int notification_template_icon_low_bg = 2130837624;
-			
-			// aapt resource value: 0x7f020071
-			public const int notification_tile_bg = 2130837617;
-			
-			// aapt resource value: 0x7f020072
-			public const int notify_panel_notification_icon_bg = 2130837618;
-			
-			// aapt resource value: 0x7f020073
-			public const int textView_selected = 2130837619;
-			
-			// aapt resource value: 0x7f020074
-			public const int textView_unselected = 2130837620;
-			
-			// aapt resource value: 0x7f020075
-			public const int tooltip_frame_dark = 2130837621;
+			public const int notification_icon_background = 2130837615;
 			
 			// aapt resource value: 0x7f020076
-			public const int tooltip_frame_light = 2130837622;
+			public const int notification_template_icon_bg = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int notification_template_icon_low_bg = 2130837623;
+			
+			// aapt resource value: 0x7f020070
+			public const int notification_tile_bg = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int notify_panel_notification_icon_bg = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int textView_selected = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int textView_unselected = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int tooltip_frame_dark = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int tooltip_frame_light = 2130837621;
 			
 			static Drawable()
 			{
@@ -2393,8 +2390,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080038
 			public const int SYM = 2131230776;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int action0 = 2131230905;
+			// aapt resource value: 0x7f0800b8
+			public const int action0 = 2131230904;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_bar = 2131230845;
@@ -2417,17 +2414,17 @@ namespace Cpodo
 			// aapt resource value: 0x7f08005b
 			public const int action_bar_title = 2131230811;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int action_container = 2131230902;
+			// aapt resource value: 0x7f0800b5
+			public const int action_container = 2131230901;
 			
 			// aapt resource value: 0x7f08007e
 			public const int action_context_bar = 2131230846;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int action_divider = 2131230909;
+			// aapt resource value: 0x7f0800bc
+			public const int action_divider = 2131230908;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int action_image = 2131230903;
+			// aapt resource value: 0x7f0800b6
+			public const int action_image = 2131230902;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2444,11 +2441,11 @@ namespace Cpodo
 			// aapt resource value: 0x7f08005d
 			public const int action_mode_close_button = 2131230813;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int action_text = 2131230904;
+			// aapt resource value: 0x7f0800b7
+			public const int action_text = 2131230903;
 			
-			// aapt resource value: 0x7f0800c6
-			public const int actions = 2131230918;
+			// aapt resource value: 0x7f0800c5
+			public const int actions = 2131230917;
 			
 			// aapt resource value: 0x7f08005e
 			public const int activity_chooser_view_content = 2131230814;
@@ -2486,8 +2483,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f08001d
 			public const int calligraphy_tag_id = 2131230749;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int cancel_action = 2131230906;
+			// aapt resource value: 0x7f0800b9
+			public const int cancel_action = 2131230905;
 			
 			// aapt resource value: 0x7f080046
 			public const int center = 2131230790;
@@ -2501,8 +2498,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080074
 			public const int checkbox = 2131230836;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int chronometer = 2131230914;
+			// aapt resource value: 0x7f0800c1
+			public const int chronometer = 2131230913;
 			
 			// aapt resource value: 0x7f08009c
 			public const int cityImageBtn = 2131230876;
@@ -2570,8 +2567,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080031
 			public const int end = 2131230769;
 			
-			// aapt resource value: 0x7f0800c8
-			public const int end_padder = 2131230920;
+			// aapt resource value: 0x7f0800c7
+			public const int end_padder = 2131230919;
 			
 			// aapt resource value: 0x7f080040
 			public const int enterAlways = 2131230784;
@@ -2624,8 +2621,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080063
 			public const int icon = 2131230819;
 			
-			// aapt resource value: 0x7f0800c7
-			public const int icon_group = 2131230919;
+			// aapt resource value: 0x7f0800c6
+			public const int icon_group = 2131230918;
 			
 			// aapt resource value: 0x7f08003b
 			public const int ifRoom = 2131230779;
@@ -2651,8 +2648,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080096
 			public const int imageZoneLinearLayout = 2131230870;
 			
-			// aapt resource value: 0x7f0800c3
-			public const int info = 2131230915;
+			// aapt resource value: 0x7f0800c2
+			public const int info = 2131230914;
 			
 			// aapt resource value: 0x7f0800b0
 			public const int informationBtn = 2131230896;
@@ -2687,9 +2684,6 @@ namespace Cpodo
 			// aapt resource value: 0x7f08009b
 			public const int linearLayout3 = 2131230875;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int linkedinImageBtn = 2131230901;
-			
 			// aapt resource value: 0x7f08001e
 			public const int listMode = 2131230750;
 			
@@ -2702,14 +2696,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f0800ae
 			public const int mapImageBtn = 2131230894;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int masked = 2131230923;
+			// aapt resource value: 0x7f0800ca
+			public const int masked = 2131230922;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int media_actions = 2131230908;
+			// aapt resource value: 0x7f0800bb
+			public const int media_actions = 2131230907;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int message = 2131230921;
+			// aapt resource value: 0x7f0800c8
+			public const int message = 2131230920;
 			
 			// aapt resource value: 0x7f080032
 			public const int middle = 2131230770;
@@ -2735,14 +2729,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f08001f
 			public const int normal = 2131230751;
 			
-			// aapt resource value: 0x7f0800c5
-			public const int notification_background = 2131230917;
-			
-			// aapt resource value: 0x7f0800bf
-			public const int notification_main_column = 2131230911;
+			// aapt resource value: 0x7f0800c4
+			public const int notification_background = 2131230916;
 			
 			// aapt resource value: 0x7f0800be
-			public const int notification_main_column_container = 2131230910;
+			public const int notification_main_column = 2131230910;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int notification_main_column_container = 2131230909;
 			
 			// aapt resource value: 0x7f08009d
 			public const int palaceImageBtn = 2131230877;
@@ -2771,11 +2765,11 @@ namespace Cpodo
 			// aapt resource value: 0x7f08004b
 			public const int right = 2131230795;
 			
-			// aapt resource value: 0x7f0800c4
-			public const int right_icon = 2131230916;
+			// aapt resource value: 0x7f0800c3
+			public const int right_icon = 2131230915;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int right_side = 2131230912;
+			// aapt resource value: 0x7f0800bf
+			public const int right_side = 2131230911;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -2879,8 +2873,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f08004c
 			public const int start = 2131230796;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int status_bar_latest_event_content = 2131230907;
+			// aapt resource value: 0x7f0800ba
+			public const int status_bar_latest_event_content = 2131230906;
 			
 			// aapt resource value: 0x7f080077
 			public const int submenuarrow = 2131230839;
@@ -2924,8 +2918,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int time = 2131230913;
+			// aapt resource value: 0x7f0800c0
+			public const int time = 2131230912;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -2978,8 +2972,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int visible = 2131230922;
+			// aapt resource value: 0x7f0800c9
+			public const int visible = 2131230921;
 			
 			// aapt resource value: 0x7f08003d
 			public const int withText = 2131230781;

@@ -17,7 +17,6 @@ namespace Cpodo
 		ImageButton exhibitionAreaImageBtn;
 		ImageButton facebookImageBtn;
 		ImageButton twitterImageBtn;
-		ImageButton linkedinImageBtn;
 
 		protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -41,7 +40,6 @@ namespace Cpodo
 			exhibitionAreaImageBtn = FindViewById<ImageButton>(Resource.Id.exhibitionAreaImageBtn);
 			facebookImageBtn = FindViewById<ImageButton>(Resource.Id.facebookImageBtn);
 			twitterImageBtn = FindViewById<ImageButton>(Resource.Id.twitterImageBtn);
-			linkedinImageBtn = FindViewById<ImageButton>(Resource.Id.linkedinImageBtn);
 		}
 
 		/// <summary>
@@ -81,12 +79,6 @@ namespace Cpodo
 				StartActivity(intent);
 			};
 			
-			linkedinImageBtn.Click += delegate
-			{
-				var uri = Android.Net.Uri.Parse("https://www.linkedin.com/");
-				var intent = new Intent(Intent.ActionView, uri);
-				StartActivity(intent);
-			};
 		}
 		
 	}
