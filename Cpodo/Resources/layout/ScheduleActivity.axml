@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+	android:weightSum="100">
 	<Toolbar 
 		android:id="@+id/toolbar"
 		android:layout_width="match_parent"
@@ -17,4 +18,38 @@
 			android:layout_height="wrap_content"
 			android:textColor="#FFFFFF"/>
 	</Toolbar>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="100"
+		android:layout_weight="10">
+		<TextView
+			android:text="Viernes, 20"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/scheduleFridayTextView"
+			android:layout_weight="50"
+			android:gravity="center"
+			android:background="@drawable/schedule_textView_selected"/>
+		<TextView
+			android:text="Sabado, 21"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/scheduleSaturdayTextView"
+			android:layout_weight="50"
+			android:gravity="center"
+			android:background="@drawable/schedule_textView_unselected"/>
+	</LinearLayout>
+	<android.support.v7.widget.RecyclerView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/recyclerView1"
+		android:layout_weight="90"/>
 </LinearLayout>
