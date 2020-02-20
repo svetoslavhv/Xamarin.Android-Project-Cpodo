@@ -24,7 +24,7 @@ namespace Cpodo.ViewHolders
 		{
 			// Locate and cache view references:
 			starImageView = itemView.FindViewById<ImageView>(Resource.Id.starImageView);
-			hourAndScheduleTextView = itemView.FindViewById<EditText>(Resource.Id.hourAndScheduleTextView);
+			hourAndScheduleTextView = itemView.FindViewById<TextView>(Resource.Id.hourAndScheduleTextView);
 		}
 	}
 }
