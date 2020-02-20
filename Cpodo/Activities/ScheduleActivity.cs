@@ -17,6 +17,8 @@ namespace Cpodo.Activities
 	{
 		TextView scheduleFridayTextView;
 		TextView scheduleSaturdayTextView;
+
+
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
