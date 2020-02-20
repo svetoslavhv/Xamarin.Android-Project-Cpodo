@@ -2624,6 +2624,9 @@ namespace Cpodo
 			// aapt resource value: 0x7f080022
 			public const int homeAsUp = 2131230754;
 			
+			// aapt resource value: 0x7f0800ca
+			public const int hourAndScheduleTextView = 2131230922;
+			
 			// aapt resource value: 0x7f080063
 			public const int icon = 2131230819;
 			
@@ -2702,14 +2705,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f0800af
 			public const int mapImageBtn = 2131230895;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int masked = 2131230926;
+			// aapt resource value: 0x7f0800d0
+			public const int masked = 2131230928;
 			
 			// aapt resource value: 0x7f0800bc
 			public const int media_actions = 2131230908;
 			
-			// aapt resource value: 0x7f0800cc
-			public const int message = 2131230924;
+			// aapt resource value: 0x7f0800ce
+			public const int message = 2131230926;
 			
 			// aapt resource value: 0x7f080032
 			public const int middle = 2131230770;
@@ -2768,9 +2771,6 @@ namespace Cpodo
 			// aapt resource value: 0x7f080076
 			public const int radio = 2131230838;
 			
-			// aapt resource value: 0x7f0800cb
-			public const int recyclerView1 = 2131230923;
-			
 			// aapt resource value: 0x7f08004b
 			public const int right = 2131230795;
 			
@@ -2789,14 +2789,17 @@ namespace Cpodo
 			// aapt resource value: 0x7f08000e
 			public const int save_scale_type = 2131230734;
 			
-			// aapt resource value: 0x7f0800c9
-			public const int scheduleFridayTextView = 2131230921;
+			// aapt resource value: 0x7f0800cb
+			public const int scheduleFridayTextView = 2131230923;
 			
 			// aapt resource value: 0x7f08008f
 			public const int scheduleImageBtn = 2131230863;
 			
-			// aapt resource value: 0x7f0800ca
-			public const int scheduleSaturdayTextView = 2131230922;
+			// aapt resource value: 0x7f0800cc
+			public const int scheduleSaturdayTextView = 2131230924;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int schedulesRecyclerView = 2131230925;
 			
 			// aapt resource value: 0x7f08002a
 			public const int screen = 2131230762;
@@ -2887,6 +2890,9 @@ namespace Cpodo
 			
 			// aapt resource value: 0x7f08002d
 			public const int src_over = 2131230765;
+			
+			// aapt resource value: 0x7f0800c9
+			public const int starImageView = 2131230921;
 			
 			// aapt resource value: 0x7f08004c
 			public const int start = 2131230796;
@@ -2990,8 +2996,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int visible = 2131230925;
+			// aapt resource value: 0x7f0800cf
+			public const int visible = 2131230927;
 			
 			// aapt resource value: 0x7f08003d
 			public const int withText = 2131230781;
@@ -3248,25 +3254,28 @@ namespace Cpodo
 			public const int notification_template_part_time = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int ScheduleActivity = 2130968640;
+			public const int ScheduleCardView = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int select_dialog_item_material = 2130968641;
+			public const int SchedulesActivity = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int select_dialog_multichoice_material = 2130968642;
+			public const int select_dialog_item_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int select_dialog_singlechoice_material = 2130968643;
+			public const int select_dialog_multichoice_material = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int support_simple_spinner_dropdown_item = 2130968644;
+			public const int select_dialog_singlechoice_material = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int toolbar = 2130968645;
+			public const int support_simple_spinner_dropdown_item = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int tooltip = 2130968646;
+			public const int toolbar = 2130968646;
+			
+			// aapt resource value: 0x7f040047
+			public const int tooltip = 2130968647;
 			
 			static Layout()
 			{

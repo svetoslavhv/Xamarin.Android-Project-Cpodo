@@ -67,14 +67,17 @@
     <Compile Include="Activities\LocationActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MapActivity.cs" />
-    <Compile Include="Activities\ScheduleActivity.cs" />
+    <Compile Include="Activities\SchedulesActivity.cs" />
+    <Compile Include="Adapters\SchedulesAdapter.cs" />
     <Compile Include="CustomControls\ScaleImageView.cs" />
     <Compile Include="CustomControls\ScaleImageViewGestureDetector.cs" />
     <Compile Include="Fragments\ExhibitionAreaFragment.cs" />
     <Compile Include="Fragments\MultipurposeRoomFragment.cs" />
+    <Compile Include="Models\Schedule.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewHolders\ScheduleViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\Exo2_Bold.otf" />
@@ -230,7 +233,7 @@
     <AndroidResource Include="Resources\drawable\textView_unselected.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\ScheduleActivity.axml">
+    <AndroidResource Include="Resources\layout\SchedulesActivity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -239,6 +242,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\schedule_textView_selected.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ScheduleCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

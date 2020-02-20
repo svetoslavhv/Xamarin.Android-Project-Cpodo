@@ -7,29 +7,52 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using Cpodo.Adapters;
+using Cpodo.Models;
 
 namespace Cpodo.Activities
 {
 	[Activity(Label = "ScheduleActivity")]
-	public class ScheduleActivity : BaseActivity
+	public class SchedulesActivity : BaseActivity
 	{
 		TextView scheduleFridayTextView;
 		TextView scheduleSaturdayTextView;
+		RecyclerView schedulesRecyclerView;
+		
+		// Layout manager that lays out each card in the RecyclerView:
+		RecyclerView.LayoutManager schedulesLayoutManager;
 
-
+		// Adapter that accesses the data set (schedules):
+		SchedulesAdapter schedulesAdapter;
+		
+		
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
 
-			SetContentView(Resource.Layout.ScheduleActivity);
+			SetContentView(Resource.Layout.SchedulesActivity);
 
-			Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+			Android.Widget.Toolbar toolbar = FindViewById<Android.Widget.Toolbar>(Resource.Id.toolbar);
 			toolbar.NavigationOnClick += delegate
 			{
 				this.OnBackPressed();
 			};
+			
+
+			List<Schedule> schedules = new List<Schedule>
+				{
+					new Schedule { ShortDescription = "Short Desctription 1"},
+					new Schedule { ShortDescription = "Short Desctription 2"}
+				};
+
+			schedulesRecyclerView = FindViewById<RecyclerView>(Resource.Id.schedulesRecyclerView);
+			schedulesLayoutManager = new LinearLayoutManager(this);
+			schedulesRecyclerView.SetLayoutManager(schedulesLayoutManager);
+			schedulesAdapter = new SchedulesAdapter(schedules);
+			schedulesRecyclerView.SetAdapter(schedulesAdapter);
 
 			scheduleFridayTextView = FindViewById<TextView>(Resource.Id.scheduleFridayTextView);
 			scheduleFridayTextView.Click += delegate

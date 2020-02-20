@@ -50,6 +50,6 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/recyclerView1"
+		android:id="@+id/schedulesRecyclerView"
 		android:layout_weight="90"/>
 </LinearLayout>

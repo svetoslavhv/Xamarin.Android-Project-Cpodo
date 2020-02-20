@@ -43,7 +43,7 @@ namespace Cpodo.Activities
 			scheduleImageBtn = FindViewById<ImageButton>(Resource.Id.scheduleImageBtn);
 			scheduleImageBtn.Click += delegate
 			{
-				StartActivity(typeof(ScheduleActivity));
+				StartActivity(typeof(SchedulesActivity));
 				Finish();
 			};
 
