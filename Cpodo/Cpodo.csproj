@@ -73,6 +73,7 @@
     <Compile Include="CustomControls\ScaleImageViewGestureDetector.cs" />
     <Compile Include="Fragments\ExhibitionAreaFragment.cs" />
     <Compile Include="Fragments\MultipurposeRoomFragment.cs" />
+    <Compile Include="HelperClasses\DatabaseHelper.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
