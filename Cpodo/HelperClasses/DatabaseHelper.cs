@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace Cpodo.HelperClasses
 {
@@ -16,7 +17,7 @@ namespace Cpodo.HelperClasses
 	{
 		public static List<T> GetAllFromTable<T>() where T: new()
 		{
-			using (var connection = new SQLiteConnection(System.IO.Path.Combine(GlobalVariables.databasePath, "MobileSell.db")))
+			using (var connection = new SQLiteConnection(System.IO.Path.Combine("GlobalVariables.databasePath", "MobileSell.db")))
 			{
 				try
 				{
