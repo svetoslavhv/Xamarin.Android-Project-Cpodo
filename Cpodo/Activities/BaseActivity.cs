@@ -21,7 +21,7 @@ namespace Cpodo.Activities
 			base.OnCreate(savedInstanceState);
 		}
 
-		//TODO: Put comment here
+		//This function sets the font family of the entire application
 		protected override void AttachBaseContext(Context context)
 		{
 			base.AttachBaseContext(Calligraphy.CalligraphyContextWrapper.Wrap(context));

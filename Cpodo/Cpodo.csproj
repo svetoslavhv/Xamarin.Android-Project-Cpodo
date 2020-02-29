@@ -68,6 +68,7 @@
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MapActivity.cs" />
     <Compile Include="Activities\SchedulesActivity.cs" />
+    <Compile Include="Activities\SpeakersActivity.cs" />
     <Compile Include="Adapters\SchedulesAdapter.cs" />
     <Compile Include="CustomControls\ScaleImageView.cs" />
     <Compile Include="CustomControls\ScaleImageViewGestureDetector.cs" />
@@ -255,7 +256,11 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SpeakersActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.

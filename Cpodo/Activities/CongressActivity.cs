@@ -19,6 +19,7 @@ namespace Cpodo.Activities
 		ImageButton locationImageBtn;
 		ImageButton congressMapImageBtn;
 		ImageButton scheduleImageBtn;
+		ImageButton speakersImageBtn;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -44,6 +45,13 @@ namespace Cpodo.Activities
 			scheduleImageBtn.Click += delegate
 			{
 				StartActivity(typeof(SchedulesActivity));
+				Finish();
+			};
+
+			speakersImageBtn = FindViewById<ImageButton>(Resource.Id.speakersImageBtn);
+			speakersImageBtn.Click += delegate
+			{
+				StartActivity(typeof(SpeakersActivity));
 				Finish();
 			};
 
