@@ -69,16 +69,19 @@
     <Compile Include="Activities\MapActivity.cs" />
     <Compile Include="Activities\SchedulesActivity.cs" />
     <Compile Include="Activities\SpeakersActivity.cs" />
+    <Compile Include="Adapters\SpeakersAdapter.cs" />
     <Compile Include="Adapters\SchedulesAdapter.cs" />
     <Compile Include="CustomControls\ScaleImageView.cs" />
     <Compile Include="CustomControls\ScaleImageViewGestureDetector.cs" />
     <Compile Include="Fragments\ExhibitionAreaFragment.cs" />
     <Compile Include="Fragments\MultipurposeRoomFragment.cs" />
     <Compile Include="HelperClasses\DatabaseHelper.cs" />
+    <Compile Include="Models\Speaker.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewHolders\SpeakerViewHolder.cs" />
     <Compile Include="ViewHolders\ScheduleViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +261,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SpeakersActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SpeakerCardView.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

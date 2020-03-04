@@ -13,7 +13,7 @@ using SQLite;
 
 namespace Cpodo.Models
 {
-	[Table("schedule")]
+	[Table("schedules")]
 	public class Schedule
 	{
 		[PrimaryKey]

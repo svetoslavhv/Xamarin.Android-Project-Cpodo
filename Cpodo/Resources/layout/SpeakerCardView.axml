@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center">
+			<ImageView
+				android:src="@android:drawable/ic_menu_gallery"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/speakerPhotoImageView"/>
+			<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/speakerNameTextView" />
+			<TextView
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/speakerResumeTextView" />
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="#808080"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"/>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+</FrameLayout>
+
