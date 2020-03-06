@@ -12,6 +12,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 using Cpodo.Adapters;
+using Cpodo.HelperClasses;
 using Cpodo.Models;
 
 namespace Cpodo.Activities
@@ -39,13 +40,9 @@ namespace Cpodo.Activities
 				this.OnBackPressed();
 			};
 
-			List<Speaker> speakers = new List<Speaker>
-			{
-				new Speaker { Photo = "https://i.imgur.com/DDH2Ckk.png", Name = "Speaker Nombre Apellidos 1", Resume = "Resume, Resume, Resume 1" },
-				new Speaker { Photo = "https://i.imgur.com/DDH2Ckk.png", Name = "Speaker Nombre Apellidos 2", Resume = "Resume, Resume, Resume 2" },
-				new Speaker { Photo = "https://i.imgur.com/DDH2Ckk.png", Name = "Speaker Nombre Apellidos 3", Resume = "Resume, Resume, Resume 3" },
-			};
-
+			//get all speakers from the db
+			List<Speaker> speakers = DatabaseHelper.GetAllFromTable<Speaker>("speakers.db");
+			
 			//fills RecyclerView with data
 			speakersRecyclerView = FindViewById<RecyclerView>(Resource.Id.speakersRecyclerView);
 			speakersLayoutManager = new LinearLayoutManager(this);
