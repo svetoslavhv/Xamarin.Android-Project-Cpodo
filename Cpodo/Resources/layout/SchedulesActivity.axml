@@ -34,7 +34,7 @@
 			android:id="@+id/scheduleFridayTextView"
 			android:layout_weight="50"
 			android:gravity="center"
-			android:background="@drawable/schedule_textView_selected"/>
+			android:background="@drawable/textView_selected"/>
 		<TextView
 			android:text="Sabado, 21"
 			android:textAppearance="?android:attr/textAppearanceMedium"
@@ -43,7 +43,7 @@
 			android:id="@+id/scheduleSaturdayTextView"
 			android:layout_weight="50"
 			android:gravity="center"
-			android:background="@drawable/schedule_textView_unselected"/>
+			android:background="@drawable/textView_unselected"/>
 	</LinearLayout>
 	<android.support.v7.widget.RecyclerView
 		android:minWidth="25px"

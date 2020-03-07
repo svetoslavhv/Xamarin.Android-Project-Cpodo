@@ -251,12 +251,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\schedule_textView_unselected.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\schedule_textView_selected.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\ScheduleCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

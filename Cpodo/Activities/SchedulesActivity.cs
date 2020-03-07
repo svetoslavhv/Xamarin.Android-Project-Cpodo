@@ -59,8 +59,8 @@ namespace Cpodo.Activities
 			scheduleFridayTextView.Click += delegate
 			{
 				//change TextViews color
-				scheduleSaturdayTextView.SetBackgroundResource(Resource.Drawable.schedule_textView_unselected);
-				scheduleFridayTextView.SetBackgroundResource(Resource.Drawable.schedule_textView_selected);
+				scheduleSaturdayTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
+				scheduleFridayTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
 
 				//TODO: Change recyclerview here
 			};
@@ -69,8 +69,8 @@ namespace Cpodo.Activities
 			scheduleSaturdayTextView.Click += delegate
 			{
 				//change TextViews color
-				scheduleFridayTextView.SetBackgroundResource(Resource.Drawable.schedule_textView_unselected);
-				scheduleSaturdayTextView.SetBackgroundResource(Resource.Drawable.schedule_textView_selected);
+				scheduleFridayTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
+				scheduleSaturdayTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
 
 				//TODO: Change recyclerview here
 			};
