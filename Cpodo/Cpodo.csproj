@@ -70,6 +70,7 @@
     <Compile Include="Activities\SchedulesActivity.cs" />
     <Compile Include="Activities\SpeakerDetailsActivity.cs" />
     <Compile Include="Activities\SpeakersActivity.cs" />
+    <Compile Include="Activities\TheCityActivity.cs" />
     <Compile Include="Adapters\SpeakersAdapter.cs" />
     <Compile Include="Adapters\SchedulesAdapter.cs" />
     <Compile Include="CustomControls\ScaleImageView.cs" />
@@ -273,6 +274,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\SpeakerDetailsActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\TheCityActivity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

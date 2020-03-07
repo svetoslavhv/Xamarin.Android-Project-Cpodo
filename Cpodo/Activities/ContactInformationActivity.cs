@@ -34,7 +34,8 @@ namespace Cpodo.Activities
 			cityImageBtn = FindViewById<ImageButton>(Resource.Id.cityImageBtn);
 			cityImageBtn.Click += delegate
 			{
-				//TODO: open a website
+				StartActivity(typeof(TheCityActivity));
+				Finish();
 			};
 
 			palaceImageBtn = FindViewById<ImageButton>(Resource.Id.palaceImageBtn);
