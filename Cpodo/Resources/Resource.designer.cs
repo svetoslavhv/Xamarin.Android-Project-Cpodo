@@ -2759,14 +2759,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f0800b0
 			public const int mapImageBtn = 2131230896;
 			
-			// aapt resource value: 0x7f0800d5
-			public const int masked = 2131230933;
+			// aapt resource value: 0x7f0800d6
+			public const int masked = 2131230934;
 			
 			// aapt resource value: 0x7f0800bd
 			public const int media_actions = 2131230909;
 			
-			// aapt resource value: 0x7f0800d3
-			public const int message = 2131230931;
+			// aapt resource value: 0x7f0800d4
+			public const int message = 2131230932;
 			
 			// aapt resource value: 0x7f080032
 			public const int middle = 2131230770;
@@ -2942,11 +2942,14 @@ namespace Cpodo
 			// aapt resource value: 0x7f0800d1
 			public const int speakerResumeTextView = 2131230929;
 			
+			// aapt resource value: 0x7f0800d2
+			public const int speakerResumeWebView = 2131230930;
+			
 			// aapt resource value: 0x7f080090
 			public const int speakersImageBtn = 2131230864;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int speakersRecyclerView = 2131230930;
+			// aapt resource value: 0x7f0800d3
+			public const int speakersRecyclerView = 2131230931;
 			
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
@@ -3065,8 +3068,8 @@ namespace Cpodo
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800d4
-			public const int visible = 2131230932;
+			// aapt resource value: 0x7f0800d5
+			public const int visible = 2131230933;
 			
 			// aapt resource value: 0x7f08003d
 			public const int withText = 2131230781;
