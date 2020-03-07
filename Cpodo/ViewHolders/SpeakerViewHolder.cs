@@ -20,13 +20,17 @@ namespace Cpodo.ViewHolders
 		public TextView speakerResumeTextView { get; private set; }
 
 		// Get references to the views defined in the CardView layout.
-		public SpeakerViewHolder(View itemView)
+		public SpeakerViewHolder(View itemView, Action<int> listener)
 			: base(itemView)
 		{
 			// Locate and cache view references:
 			speakerPhotoImageView = itemView.FindViewById<ImageView>(Resource.Id.speakerPhotoImageView);
 			speakerNameTextView = itemView.FindViewById<TextView>(Resource.Id.speakerNameTextView);
 			speakerResumeTextView = itemView.FindViewById<TextView>(Resource.Id.speakerResumeTextView);
+
+			// Detect user clicks on the item view and report which item
+			// was clicked (by layout position) to the listener:
+			itemView.Click += (sender, e) => listener(base.LayoutPosition);
 		}
 	}
 }

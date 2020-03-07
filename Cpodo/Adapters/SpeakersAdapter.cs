@@ -19,6 +19,7 @@ namespace Cpodo.Adapters
 {
 	public class SpeakersAdapter : RecyclerView.Adapter
 	{
+		public event EventHandler<string> ItemClick;
 		public List<Speaker> listOfSpeakers;
 
 		public SpeakersAdapter(List<Speaker> speakers)
@@ -29,6 +30,12 @@ namespace Cpodo.Adapters
 		public override int ItemCount
 		{
 			get { return listOfSpeakers.Count; }
+		}
+
+		void OnClick(int position)
+		{
+			if (ItemClick != null)
+				ItemClick(this, listOfSpeakers[position].Resume);
 		}
 
 		public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
@@ -47,7 +54,7 @@ namespace Cpodo.Adapters
 			View itemView = LayoutInflater.From(parent.Context).
 						Inflate(Resource.Layout.SpeakerCardView, parent, false);
 
-			SpeakerViewHolder vh = new SpeakerViewHolder(itemView);
+			SpeakerViewHolder vh = new SpeakerViewHolder(itemView, OnClick);
 			return vh;
 		}
 

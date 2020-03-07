@@ -48,7 +48,16 @@ namespace Cpodo.Activities
 			speakersLayoutManager = new LinearLayoutManager(this);
 			speakersRecyclerView.SetLayoutManager(speakersLayoutManager);
 			speakersAdapter = new SpeakersAdapter(speakers);
+			speakersAdapter.ItemClick += OnItemClick;
 			speakersRecyclerView.SetAdapter(speakersAdapter);
+		}
+
+		private void OnItemClick(object sender, string speakerResumeUrl)
+		{
+			var speakerDetailsActivity = new Intent(this, typeof(SpeakerDetailsActivity));
+			speakerDetailsActivity.PutExtra("speakerResumeUrl", speakerResumeUrl);
+			StartActivity(speakerDetailsActivity);
+			Finish();
 		}
 
 		public override void OnBackPressed()
