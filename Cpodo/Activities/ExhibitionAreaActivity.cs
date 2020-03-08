@@ -36,7 +36,10 @@ namespace Cpodo.Activities
 				//this prevents user to click the button several times while CongressMapActivity is loading
 				exhibitionMapImageBtn.Enabled = false;
 
-				StartActivity(typeof(CongressMapActivity));
+				//open CongressMapActivity passing it the name of the current activity
+				var congressMapActivity = new Intent(this, typeof(CongressMapActivity));
+				congressMapActivity.PutExtra("previousActivity", "ExhibitionAreaActivity");
+				StartActivity(congressMapActivity);
 				Finish();
 			};
 		}

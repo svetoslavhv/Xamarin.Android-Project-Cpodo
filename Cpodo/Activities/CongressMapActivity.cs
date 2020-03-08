@@ -24,6 +24,12 @@ namespace Cpodo.Activities
 		TextView exhibitionAreaTextView;
 		TextView multipurposeRoomTextView;
 
+		/// <summary>
+		/// variable that holds the name of the previous activity
+		/// (the activity which called this activity)
+		/// </summary>
+		string previousActivity;
+
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -61,12 +67,25 @@ namespace Cpodo.Activities
 				multipurposeRoomTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
 				exhibitionAreaTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
 			};
+
+			//get the previous activity name
+			previousActivity = Intent.GetStringExtra("previousActivity");
 		}
 		
 		public override void OnBackPressed()
 		{
-			StartActivity(typeof(CongressActivity));
-			Finish();
+			//Check which activity called the current activity and go back there
+			if (previousActivity.Equals("ExhibitionAreaActivity"))
+			{
+				StartActivity(typeof(ExhibitionAreaActivity));
+				Finish();
+			}
+
+			if (previousActivity.Equals("CongressActivity"))
+			{
+				StartActivity(typeof(CongressActivity));
+				Finish();
+			}
 		}
 	}
 }
