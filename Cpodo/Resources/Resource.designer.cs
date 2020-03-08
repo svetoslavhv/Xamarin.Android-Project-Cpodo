@@ -2567,9 +2567,6 @@ namespace Cpodo
 			// aapt resource value: 0x7f08003a
 			public const int collapseActionView = 2131230778;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int congressBtn = 2131230894;
-			
 			// aapt resource value: 0x7f0800b3
 			public const int congressImageBtn = 2131230899;
 			
@@ -2635,6 +2632,9 @@ namespace Cpodo
 			
 			// aapt resource value: 0x7f080096
 			public const int exhibitionAreaTextView = 2131230870;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int exhibitionMapImageBtn = 2131230894;
 			
 			// aapt resource value: 0x7f080042
 			public const int exitUntilCollapsed = 2131230786;
