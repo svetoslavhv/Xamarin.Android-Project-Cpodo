@@ -20,6 +20,10 @@ namespace Cpodo.Activities
 	[Activity(Label = "SpeakersActivity", ScreenOrientation = ScreenOrientation.Portrait)]
 	public class SpeakersActivity : BaseActivity
 	{
+		TextView internationalSpeakersTextView;
+
+		TextView nationalSpeakersTextView;
+
 		RecyclerView speakersRecyclerView;
 
 		// Layout manager that lays out each card in the RecyclerView:
@@ -27,7 +31,9 @@ namespace Cpodo.Activities
 
 		// Adapter that accesses the data set (speakers):
 		SpeakersAdapter speakersAdapter;
-
+		
+		List<Speaker> speakers;
+			
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -39,14 +45,43 @@ namespace Cpodo.Activities
 			{
 				this.OnBackPressed();
 			};
-
-			//get all speakers from the db
-			List<Speaker> speakers = DatabaseHelper.GetAllFromTable<Speaker>("speakers.db");
 			
-			//fills RecyclerView with data
 			speakersRecyclerView = FindViewById<RecyclerView>(Resource.Id.speakersRecyclerView);
 			speakersLayoutManager = new LinearLayoutManager(this);
 			speakersRecyclerView.SetLayoutManager(speakersLayoutManager);
+			LoadSpeakers("international");
+
+			internationalSpeakersTextView = FindViewById<TextView>(Resource.Id.internationalSpeakersTextView);
+			internationalSpeakersTextView.Click += delegate
+			{
+				//change TextViews's style when selected/not-selected
+				internationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
+				nationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
+
+				LoadSpeakers("international");
+			};
+
+			nationalSpeakersTextView = FindViewById<TextView>(Resource.Id.nationalSpeakersTextView);
+			nationalSpeakersTextView.Click += delegate
+			{
+				//change TextViews's style when selected/not-selected
+				nationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
+				internationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
+
+				LoadSpeakers("national");
+			};
+		}
+
+		/// <summary>
+		/// Load speakers inside activity
+		/// </summary>
+		/// <param name="speakerType">type of speaker</param>
+		private void LoadSpeakers(string speakerType)
+		{
+			//get all speakers from the db 
+			//TODO: get only spekaers of given speakerType
+			speakers = DatabaseHelper.GetAllFromTable<Speaker>("speakers.db");
+
 			speakersAdapter = new SpeakersAdapter(speakers);
 			speakersAdapter.ItemClick += OnItemClick;
 			speakersRecyclerView.SetAdapter(speakersAdapter);
