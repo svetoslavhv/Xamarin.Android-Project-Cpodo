@@ -222,9 +222,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ic_app_background_image.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_51_congress_logo.jpg" />
   </ItemGroup>
   <ItemGroup>
