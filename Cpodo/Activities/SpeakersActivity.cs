@@ -32,8 +32,21 @@ namespace Cpodo.Activities
 		// Adapter that accesses the data set (speakers):
 		SpeakersAdapter speakersAdapter;
 		
-		List<Speaker> speakers;
-			
+		/// <summary>
+		/// List that contains all the speakers
+		/// </summary>
+		List<Speaker> allSpeakers;
+
+		/// <summary>
+		/// List that contains the international speakers
+		/// </summary>
+		List<Speaker> internationalSpeakers;
+
+		/// <summary>
+		/// List that contains the national speakers
+		/// </summary>
+		List<Speaker> nationalSpeakers;
+
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -46,10 +59,19 @@ namespace Cpodo.Activities
 				this.OnBackPressed();
 			};
 			
+			//get all the speakers from the db
+			allSpeakers = DatabaseHelper.GetAllFromTable<Speaker>("speakers.db");
+
+			//get only the international spakers
+			internationalSpeakers = allSpeakers.Where(x => x.Nationality.Equals("international")).ToList();
+
+			//get only the national speakers
+			nationalSpeakers = allSpeakers.Where(x => x.Nationality.Equals("national")).ToList();
+
 			speakersRecyclerView = FindViewById<RecyclerView>(Resource.Id.speakersRecyclerView);
 			speakersLayoutManager = new LinearLayoutManager(this);
 			speakersRecyclerView.SetLayoutManager(speakersLayoutManager);
-			LoadSpeakers("international");
+			LoadSpeakers(internationalSpeakers);
 
 			internationalSpeakersTextView = FindViewById<TextView>(Resource.Id.internationalSpeakersTextView);
 			internationalSpeakersTextView.Click += delegate
@@ -58,7 +80,7 @@ namespace Cpodo.Activities
 				internationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
 				nationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
 
-				LoadSpeakers("international");
+				LoadSpeakers(internationalSpeakers);
 			};
 
 			nationalSpeakersTextView = FindViewById<TextView>(Resource.Id.nationalSpeakersTextView);
@@ -68,20 +90,16 @@ namespace Cpodo.Activities
 				nationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_selected);
 				internationalSpeakersTextView.SetBackgroundResource(Resource.Drawable.textView_unselected);
 
-				LoadSpeakers("national");
+				LoadSpeakers(nationalSpeakers);
 			};
 		}
 
 		/// <summary>
 		/// Load speakers inside activity
 		/// </summary>
-		/// <param name="speakerType">type of speaker</param>
-		private void LoadSpeakers(string speakerType)
+		/// <param name="speakers">speakers</param>
+		private void LoadSpeakers(List<Speaker> speakers)
 		{
-			//get all speakers from the db 
-			//TODO: get only spekaers of given speakerType
-			speakers = DatabaseHelper.GetAllFromTable<Speaker>("speakers.db");
-
 			speakersAdapter = new SpeakersAdapter(speakers);
 			speakersAdapter.ItemClick += OnItemClick;
 			speakersRecyclerView.SetAdapter(speakersAdapter);
