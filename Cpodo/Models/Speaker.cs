@@ -24,5 +24,8 @@ namespace Cpodo.Models
 
 		[Column("resume")]
 		public string Resume { get; set; }
+
+		[Column("nationality")]
+		public string Nationality { get; set; }
 	}
 }
