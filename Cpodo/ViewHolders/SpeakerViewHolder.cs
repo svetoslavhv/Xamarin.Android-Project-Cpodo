@@ -26,7 +26,6 @@ namespace Cpodo.ViewHolders
 			// Locate and cache view references:
 			speakerPhotoImageView = itemView.FindViewById<ImageView>(Resource.Id.speakerPhotoImageView);
 			speakerNameTextView = itemView.FindViewById<TextView>(Resource.Id.speakerNameTextView);
-			speakerResumeTextView = itemView.FindViewById<TextView>(Resource.Id.speakerResumeTextView);
 
 			// Detect user clicks on the item view and report which item
 			// was clicked (by layout position) to the listener:

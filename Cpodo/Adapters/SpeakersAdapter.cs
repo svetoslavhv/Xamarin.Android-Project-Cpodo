@@ -46,7 +46,6 @@ namespace Cpodo.Adapters
 			vh.speakerPhotoImageView.SetImageBitmap(imageBitmap);
 			
 			vh.speakerNameTextView.Text = listOfSpeakers[position].Name;
-			vh.speakerResumeTextView.Text = listOfSpeakers[position].Resume;
 		}
 
 		public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
