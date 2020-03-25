@@ -47,7 +47,6 @@ namespace Cpodo.Activities
 		
 		public override void OnBackPressed()
 		{
-			StartActivity(typeof(SpeakersActivity));
 			Finish();
 		}
 	}

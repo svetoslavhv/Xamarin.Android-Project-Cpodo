@@ -110,7 +110,6 @@ namespace Cpodo.Activities
 			var speakerDetailsActivity = new Intent(this, typeof(SpeakerDetailsActivity));
 			speakerDetailsActivity.PutExtra("speakerResumeUrl", speakerResumeUrl);
 			StartActivity(speakerDetailsActivity);
-			Finish();
 		}
 
 		public override void OnBackPressed()
